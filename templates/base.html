@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>{% block title %}Greatness.Compare - Results Parser{% endblock %}</title>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-white border-b border-gray-400">
+      <div class="container mx-auto py-4">
+        <h1 class="text-3xl font-bold text-center">Greatness.Compare - Results Parser</h1>
+        <!-- <p><b>About:</b> This tool helps you convert the results from the "Extensions" tab of the pipeline into an excel file (.xlsx). Useful when running multiple projects, like Sauron experiments.</p> -->
+        <!-- <p><b>Usage:</b> Copy all the text from the extensions tab, including dataset names and headers. Select a filename for the excel below. Click submit!</p> -->
+      </div>
+    </header>
+    {% block content %}{% endblock %}
+  </body>
+</html>
